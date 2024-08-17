@@ -49,7 +49,7 @@ const getDashboardMetrics = (req, res) => __awaiter(void 0, void 0, void 0, func
             },
         });
         const expenseByCategorySummary = expenseByCategorySummaryRaw.map((item) => (Object.assign(Object.assign({}, item), { amount: item.amount.toString() })));
-        // The function sends a JSON response containing all the fetched data. 
+        // The function sends a JSON response containing all the fetched data.
         // Each piece of data is returned in a key-value pair, with the keys matching the variable names.
         res.json({
             popularProducts,
